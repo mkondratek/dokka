@@ -1,12 +1,12 @@
 package locationProvider
 
-import org.jetbrains.dokka.plugability.DokkaContext
 import org.jetbrains.dokka.base.resolvers.local.DokkaLocationProvider
+import org.jetbrains.dokka.plugability.DokkaContext
 import org.jetbrains.dokka.testApi.testRunner.AbstractCoreTest
 import org.junit.jupiter.api.Assertions.assertNotEquals
 import org.junit.jupiter.api.Test
 
-class DefaultLocationProviderTest: AbstractCoreTest() {
+class DokkaLocationProviderTest : AbstractCoreTest() {
     @Test
     fun `#644 same directory for module and package`() {
         val configuration = dokkaConfiguration {
